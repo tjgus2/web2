@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소실습</title>
+    <style>
+        *{
+            background-color: rgb(219, 151, 174);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul > li {
+            list-style: none;
+            margin: 30px;
+            font-size: 24px;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            padding: 0 10px;
+        }
+
+        ul > li > a::before{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="">
+                <span>HTML</span>
+                <span>markup</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>CSS</span>
+                <span>markup</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>javascript</span>
+                <span>markup</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>uiux Design</span>
+                <span>markup</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>portfolio</span>
+                <span>markup</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
