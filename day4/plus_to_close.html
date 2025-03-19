@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plus to close</title>
+    <script src="https://kit.fontawesome.com/e5a50b0b7c.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 48px;
+            background-color: #324342;
+            color: #564633;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .plus_btn>button {
+            cursor: pointer;
+            background: none;
+            color: #564633;
+            font-size: 20px;
+            border: none;
+        }
+
+        .plus_btn:hover {
+            animation-name: shake;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .plus_btn>button:hover {
+            animation-name: close;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="plus_btn">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+</body>
+
+</html>

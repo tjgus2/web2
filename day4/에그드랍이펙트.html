@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍이펙트</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: GmarketSansMedium;
+            font-weight: 900;
+            font-size: 36px;
+        }
+
+        figure > img {
+            animation-name: translate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes translate {
+            0%{
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(400px);
+            }
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Egg Makes Better</h2>
+        <figure>
+            <img src="./에그드랍.jpg" alt="">
+        </figure>
+        <div class="text_area">
+            <h3>일상의 수준을 높이다</h3>
+            <p>현대인에게 필요한 비타민, 철분, <br>
+                아미노산 등의 풍부한 영양소가 함유된 <br>
+                프리미엄 무 항생제 계란만 엄격하게 <br> 
+                사용한 맛있는 스크럼블 에그로 건강한 <br>
+                한 끼를 요리합니다. <br><br>
+                
+                우리에게 익숙한 샌드위치에서 신선한 <br>
+                재료와 감각적인 모양으로 한 단계 <br>
+                업그레이드 된 계란 샌드위치라는 <br>
+                카테고리를 새롭게 창조하였습니다. <br>
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
