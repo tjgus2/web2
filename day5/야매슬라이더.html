@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야매슬라이더</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            border: none;
+            background-color: goldenrod;
+            border-radius: 16px;
+            margin: 16px auto;
+            display: block;
+            padding: 5px;
+            box-shadow: 5px 10px 10px #999;
+        }
+
+        ul {
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        li {
+            min-width: 268px;
+            height: 150px;
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        li:nth-child(1) {
+            background: url(./고양이사진/1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(./고양이사진/2.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(./고양이사진/3.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(./고양이사진/4.jpeg);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background: url(./고양이사진/5.png);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background: url(./고양이사진/6.jpeg);
+            background-size: cover;
+        }
+
+        li:nth-child(7) {
+            background: url(./고양이사진/7.png);
+            background-size: cover;
+        }
+
+        li:nth-child(8) {
+            background: url(./고양이사진/8.jpg);
+            background-size: cover;
+        }
+
+        button:focus+ul li{
+            animation: slide 3s forwards;
+            animation-timing-function: cubic-bezier(0.71,-0.37, 0.62, 1.35);
+        }   
+        /* +: 인접선택자 */
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button>
+            동물이 지나가용
+        </button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
