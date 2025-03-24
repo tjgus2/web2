@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형실습1</title>
+    <style>
+        section>div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: darkblue;
+            width: 100%;
+            height: 200px;
+        }
+
+        @media (max-width: 1280px) {
+            .box1 {
+                display: none;
+            }
+        }
+
+        .box2 {
+            background-color: aqua;
+            display: none;
+        }
+
+        @media (min-width: 760px) and (max-width: 1280px) {
+            .box2 {
+                display: block;
+            }
+        }
+
+        .box3 {
+            background-color: gold;
+            display: none;
+        }
+
+        @media (max-width: 760px) and (min-width: 360px) {
+            .box3 {
+                display: block;
+            }
+        }
+
+        .box4 {
+            background-color: wheat;
+            display: none;
+        }
+
+        @media (max-width: 360px) {
+            .box4 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box1">
+            저는 브라우저의 크기 100%를 차지하고 브라우저가 1280까지 줄어들면 사라져요
+        </div>
+        <div class="box2">
+            저는 브라우저의 크기가 760보다 크고 1280보다 작을 때만 나타나요
+        </div>
+        <div class="box3">
+            저는 브라우저의 크기가 760 이하일 때 나타나고 브라우저가 360보다 작아지면 다시 사라져요
+        </div>
+        <div class="box4">
+            저는 브라우저의 크기가 360px 이하일 때 나타나요
+        </div>
+    </section>
+
+</body>
+
+</html>
