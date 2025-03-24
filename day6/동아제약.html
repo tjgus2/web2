@@ -40,7 +40,7 @@
             margin: 0 12px;
         }
 
-        h1 > img {
+        h1>img {
             width: 146px;
         }
 
@@ -51,7 +51,7 @@
 
         li {
             list-style: none;
-            margin: auto 12px;
+            margin: auto 30px;
             font-size: 12px;
             font-weight: 600;
         }
@@ -63,9 +63,10 @@
 
         .icon>.search {
             border: 1px solid #000;
-            width: 150px;
-            border-radius: 16px;
-            margin: auto 24x;
+            width: 200px;
+            height: 40px;
+            border-radius: 24px;
+            margin: auto 36px;
             position: relative;
         }
 
@@ -76,7 +77,7 @@
         }
 
         .icon>i {
-            margin: auto 24px;
+            margin: auto 36px;
         }
 
         .menu,
@@ -94,7 +95,14 @@
             content: "";
             margin: 8px 0;
         }
-        
+
+        @media (max-width: 700px) {
+
+            ul,
+            .search {
+                display: none;
+            }
+        }
     </style>
 </head>
 
